@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name_short">VLAN</string>
+    <string name="app_name_full">VLAN Configuration</string>
+
+    <string name="filler">Filler</string>
+
+    <string name="button_add">Add</string>
+    <string name="button_remove">Remove</string>
+    <string name="button_list">List IF</string>
+
+    <string name="success_title">Success</string>
+    <string name="success_message">Success.</string>
+    <string name="error_title">Error</string>
+    <string name="label_linkaddr">Link Address</string>
+    <string name="label_ifname">Interface Name</string>
+    <string name="label_vlan_id">VLAN Id</string>
+</resources>

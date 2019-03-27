@@ -1,0 +1,31 @@
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="prefs_top"
+    android:enabled="false">
+
+    <com.securespaces.android.vlanconfig.UpdatingEditTextPreference
+        android:key="iFName"
+        android:inputType="textNoSuggestions"
+        android:title="@string/label_ifname"
+        android:summary="@string/filler"
+        android:selectAllOnFocus="true" />
+
+    <com.securespaces.android.vlanconfig.UpdatingEditTextPreference
+        android:key="vlanId"
+        android:inputType="textNoSuggestions"
+        android:digits="0123456789"
+        android:title="@string/label_vlan_id"
+        android:summary="@string/filler"
+        android:selectAllOnFocus="true" />
+
+    <com.securespaces.android.vlanconfig.UpdatingEditTextPreference
+        android:key="linkAddress"
+        android:inputType="textNoSuggestions"
+        android:digits="0123456789."
+        android:title="@string/label_linkaddr"
+        android:summary="@string/filler"
+        android:selectAllOnFocus="true"
+        />
+
+</PreferenceScreen>
