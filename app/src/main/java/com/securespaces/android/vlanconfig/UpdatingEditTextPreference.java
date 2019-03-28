@@ -6,10 +6,6 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewGroup;
 
-/**
- * Created by eric on 25/01/18.
- */
-
 public class UpdatingEditTextPreference extends EditTextPreference {
 
     public UpdatingEditTextPreference(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {

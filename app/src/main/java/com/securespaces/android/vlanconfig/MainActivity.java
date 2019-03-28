@@ -24,7 +24,6 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
     private static final String FRAGMENT_TAG = "frag_tag";
-    private static final String KEY_RADIO_SELECTION = "radio_selection";
 
     private SpacesManager mSpacesManager;
     private ConfigPrefFrag mConfigFragment;
@@ -159,7 +158,6 @@ public class MainActivity extends AppCompatActivity {
 
     private void listInterface() {
 
-        Log.d(TAG, "JACK Start activity as user: "+UserUtils.myUserId());
         Intent intent = new Intent(this, ListObjectActivity.class);
         intent.putExtra(PrimeEngine.EXTRA_USERID,UserUtils.myUserId());
         mContext.startActivityAsUser(intent, UserUtils.myUserHandle());
@@ -235,5 +233,6 @@ public class MainActivity extends AppCompatActivity {
     private void reset() {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
+        finish();
     }
 }
